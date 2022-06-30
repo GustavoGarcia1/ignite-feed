@@ -10,7 +10,7 @@ export function Post() {
                         styles={styles.avatar}
                         src="https://github.com/GustavoGarcia1.png"
                     />
-                    <div style={styles.authorInfo}>
+                    <div className={styles.authorInfo}>
                         <strong>Gustavo Garcia</strong>
                         <span>Fullstack Developer</span>
                     </div>
@@ -22,8 +22,12 @@ export function Post() {
             <div className={styles.content}>
                     <p>Fala galeraa 👋</p>  
                     <p>Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀</p>
-                    <p>👉 <a href="#">jane.design/doctorcare</a></p>    
-                    <p><a href="#">#novoprojeto #nlw #rocketseat</a></p>    
+                    <p>👉 { ' ' }<a href="#">jane.design/doctorcare</a></p>    
+                    <p>
+                        <a href=''>#novoprojeto</a> { ' ' }
+                        <a href=''>#nlw</a> { ' ' }
+                        <a href=''>#rocketseat</a>
+                    </p>    
             </div>
         </article>
     )
